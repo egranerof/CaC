@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<title>Tp Integrador CAC HTML-CSS-Bootstrap</title>
+	<meta name="author" content="Emanuel Granero">
+	<meta name="keywords" content="codo a codo, integrador">
+	<meta http-equiv="content-language" content="es">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<!--icons-->
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+
+	<!-- JQuery alternative: <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	crossorigin="anonymous"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<!-- CSS -->
+	<!-- animate -->
+	<link rel="stylesheet" href="assets/css/animate.min.css">
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- toast -->
+	<link rel="stylesheet" type="text/css" href="assets/css/toast.style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/jquerysctipttop.css">
+	<!-- font-awesome -->
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<!-- google font -->
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700,800' rel='stylesheet' type='text/css'>
+	<!-- fullpage custom -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="container-fluid">
+		<!-- Start NavBar -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark upperNav ">
+			<img class="navbar-brand" src="img/codoacodo.png">
+			<h3>Conf Bs As</h3>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
+					class="navbar-toggler-icon"></span> </button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<!-- ul con .mr-auto para alinear a la derecha -->
+				<ul class="navbar-nav mr-auto"></ul>
+				<!-- ul alineado a la derecha -->
+				<ul class="navbar-nav ul.nav">
+					<li class="nav-item active"> <a class="nav-link" href="index.html">La conferencia <span
+								class="sr-only">La conferencia</span></a></li>
+					<li class="nav-item"> <a class="nav-link" href="index.html">Los oradores <span class="sr-only">Los
+								oradores</span></a></li>
+					<li class="nav-item"> <a class="nav-link" href="index.html">El lugar y fecha <span
+								class="sr-only">El lugar y fecha</span></a></li>
+					<li class="nav-item"> <a class="nav-link" href="index.html">Convi&eacute;rtete en orador <span
+								class="sr-only">Conviertete en orador</span></a></li>
+					<li class="nav-item"> <a class="nav-link" href="tickets.html" id="tickets">Comprar tickets <span
+								class="sr-only">Comprar tickets</span></a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- End NavBar -->
+		<!-- Start Scroll -->
+		<div class="scroll">
+			<!-- segundo medio -->
+			<div class="scrollInside celHide"></div>
+			<div class="scrollInside">
+				<h1>Conf Bs As</h1>
+				<p>Bs As llega por primera vez a la Argentina. Un evento para compartir con nuestra comunidad el
+					conocimiento y experiencia de los expertos que est&aacute;n creando el futuro de internet. Ven a
+					conocer a miembros del evento, a otros estudiantes de codo a codo y los oradores de primer nivel que
+					tenemos para t&iacute;. Te esperamos!</p>
+				<p> <a href="#" class="scrollLink">Quiero ser orador</a> <a href="#" class="scrollLink">Compran
+						tickets</a> </p>
+			</div>
+		</div>
+		<!-- End Scroll -->
+		<!-- Start Cards -->
+		<div class="cardsContainer"> <span class="cardTitles">
+				<h5>Conoce a los</h5>
+				<h1>Oradores</h1>
+			</span> </div>
+		<div id="cardsContainer" class="cardsContainer mr-auto col-sm">
+			<div class="card"> <img class="card-img-top" src="img/steve.jpg" alt="steve">
+				<div class="card-body"> <span class="javascript">Javascript</span> <span class="react">React</span>
+					<h5 class="card-title">Steve Jobs</h5>
+					<p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+						doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+						architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+						aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
+						sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+						adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+						aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+						suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure
+						reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui
+						dolorem eum fugiat quo voluptas nulla pariatur?</p>
+				</div>
+			</div>
+			<div class="card"> <img class="card-img-top" src="img/bill.jpg" alt="bill">
+				<div class="card-body"> <span class="javascript">Javascript</span> <span class="react">React</span>
+					<h5 class="card-title">Bill Gates</h5>
+					<p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+						doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+						architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+						aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
+						sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+						adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+						aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+						suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure
+						reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui
+						dolorem eum fugiat quo voluptas nulla pariatur?</p>
+				</div>
+			</div>
+			<div class="card"> <img class="card-img-top" src="img/ada.jpeg" alt="ada">
+				<div class="card-body"> <span class="negocios">Negocios</span> <span class="startups">Startups</span>
+					<h5 class="card-title">Ada Lovelace</h5>
+					<p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+						doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+						architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+						aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
+						sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+						adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+						aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+						suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure
+						reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui
+						dolorem eum fugiat quo voluptas nulla pariatur?</p>
+				</div>
+			</div>
+		</div>
+		<!-- End Cards -->
+		<!-- Start Carrousel -->
+		<div id="carouselInfo" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselInfo" class="active"></li>
+				<li data-target="#carouselInfo" class=""></li>
+				<li data-target="#carouselInfo" data-slide-to="2" class=""></li>
+				<li data-target="#carouselInfo" data-slide-to="3" class=""></li>
+				<li data-target="#carouselInfo" data-slide-to="4" class=""></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="row">
+						<div class="col-sm"> <img class="d-block w-100" src="img/honolulu-resize.jpg" alt="First slide">
+						</div>
+						<div class="col-sm info">
+							<h1>Honolulu</h1>
+							<p>Honolulu es la capital y localidad más grande del estado de Hawái, en los Estados Unidos.
+							</p>
+							<p>Honolulu es la más sureña de entre las principales ciudades estadounidenses.</p>
+							<p>Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de
+								Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que
+								cubre toda la isla (aproximadamente 600 km² de superficie).</p> <a href="#">Conocé
+								m&aacute;s</a>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col-sm"> <img class="d-block w-100" src="img/ba1.jpg" alt="First slide"> </div>
+						<div class="col-sm info">
+							<h1>Buenos Aires - Octubre</h1>
+							<p>Buenos aires es la provincia y localidad m&aacute;s grande del estado de Argentina, en
+								los Estados Unidos.</p>
+							<p>Honolulu es la más sureña de entre las principales ciudades estadounidenses.</p>
+							<p>Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de
+								Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que
+								cubre toda la isla (aproximadamente 600 km² de superficie).</p> <a
+								href="#">Conoc&eacute; m&aacute;s</a>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col-sm"> <img class="d-block w-100" src="img/hawaii2.jpg" alt="First slide"> </div>
+						<div class="col-sm info">
+							<h1>Espa&ntilde;a - Octubre</h1>
+							<p>Esta foto creo que es de Espa&ntilde;a parece que tiene rica comida y ahora tengo hambre,
+								en los Estados Unidos.</p>
+							<p>Honolulu es la más sureña de entre las principales ciudades estadounidenses.</p>
+							<p>Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de
+								Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que
+								cubre toda la isla (aproximadamente 600 km² de superficie).</p> <a
+								href="#">Conoc&eacute; m&aacute;s</a>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col-sm"> <img class="d-block w-100" src="img/ba3.jpg" alt="First slide"> </div>
+						<div class="col-sm info">
+							<h1>Obelisco - Octubre</h1>
+							<p>En Buenos Aires - Argentina esta el obelisco en el medio de la 9 de julio, en los Estados
+								Unidos.</p>
+							<p>Honolulu es la más sureña de entre las principales ciudades estadounidenses.</p>
+							<p>Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de
+								Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que
+								cubre toda la isla (aproximadamente 600 km² de superficie).</p> <a
+								href="#">Conoc&eacute; m&aacute;s</a>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col-sm"> <img class="d-block w-100" src="img/ba1.jpg" alt="First slide"> </div>
+						<div class="col-sm info">
+							<h1>Coso de agua - Octubre</h1>
+							<p>En Buenos Aires - Argentina este es el coso de agua, en los Estados Unidos.</p>
+							<p>Honolulu es la más sureña de entre las principales ciudades estadounidenses.</p>
+							<p>Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de
+								Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que
+								cubre toda la isla (aproximadamente 600 km² de superficie).</p> <a
+								href="#">Conoc&eacute; m&aacute;s</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="carousel-control-prev carouselControl" href="#carouselInfo" role="button" data-slide="prev"> <span
+					class="carousel-control-prev-icon " aria-hidden="true"></span> <span class="sr-only">Prev</span>
+			</a>
+			<a class="carousel-control-next carouselControl" href="#carouselInfo" role="button" data-slide="next"> <span
+					class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span>
+			</a>
+		</div>
+		<!-- End Carrousel -->
+		<!-- Start Form -->
+		<div class="formContainer"> <span class="formTitles">
+				<h6>Convi&eacute;rtete en</h6>
+				<h1>Orador</h1>
+			</span>
+			<div class="row">
+				<form id="oradorForm" class="col-sm" method="post">
+					<p>An&oacute;tate como orador para dar una <span class="ignite">charla ignite</span>.
+						Cu&eacute;ntanos de que quieres hablar!</p>
+					<div class="row">
+						<div class="col-sm">
+							<input type="text" name="name" placeholder="Nombre" required>
+						</div>
+						<div class="col-sm">
+							<input type="text" name="surname" placeholder="Apellido" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm">
+							<textarea name="details" placeholder="Sobre qu&eacute; quieres hablar?" required></textarea>
+						</div>
+					</div>
+					<p class="reminder">Recuerda incluir un t&iacute;tulo para tu charla</p>
+					<p>
+						<input type="submit" value="Enviar">
+					</p>
+				</form>
+			</div>
+		</div>
+		<!-- End Form -->
+		<div id="imgRef" class="hidden">
+			<hr>
+			<p>Trabajo Practico Integrador Front End</p>
+			<p?>Deberán replicar la siguiente página principal con lo visto en clase hasta el momento, se recomienda
+				usar bootstrap</p>
+				<h1>Img Ref</h1> <img id="screenshot" src="img/screenshot.jpeg">
+				<p>Las imágenes a utilizar se encuentran en un comprimido, así como la imagen final.</p>
+				<p>La entrega será pegando el link de donde está alojado su trabajo, puede ser cualquiera de las
+					siguientes alternativas ftp, servidor gratuito o github.</p>
+				<h2>Fecha de entrega 17/10</h2>
+				<h1>FIN Img Ref</h1>
+		</div>
+		<!-- Start Footer -->
+		<footer class="text-center text-lg-start text-muted" id="footerPage">
+			<nav class="navbar navbar-expand-lg">
+				<div>
+					<ul class="navbar-nav mr-auto col-sm">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">
+								<p>Preguntas</p>
+								<p>frecuentes</p> <span class="sr-only">Preguntas frecuentes</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">
+								<p>Contáctanos <span class="sr-only">Contactanos</span></p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">
+								<p>Prensa <span class="sr-only">Prensa</span></p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">
+								<p>Conferencias <span class="sr-only">Conferencias</span></p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">
+								<p>Términos y</p>
+								<p>condiciones</p> <span class="sr-only">Terminos y condiciones</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">
+								<p>Privacidad <span class="sr-only">Privacidad</span></p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">
+								<p>Estudiantes <span class="sr-only">Estudiantes</span></p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</footer>
+		<!-- End Footer -->
+	</div>
+	<!-- JS to be done. Form is not done yet -->
+
+</body>
+
+</html>
